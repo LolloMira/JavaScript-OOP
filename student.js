@@ -30,6 +30,23 @@ class Student{
             return code;
         
     }
+
+    tooString(){
+
+        let mean = this.calculateMean();
+
+        if (mean === -1) {
+            mean = "N/c";
+        }
+
+        let studentDescription = "Nome: " + this.name + "\n" 
+                               + "Cognome: " + this.surname + "\n"
+                               + "Età: " + this.age + "\n"
+                               + "Media: " + mean;
+
+            return studentDescription;
+     }
+     
 }
 
 
